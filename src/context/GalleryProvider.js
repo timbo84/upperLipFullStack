@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 export const GalleryProvider = (props) => {
     const [ imageList, setImageList ] = useState([]);
     const baseUrl1 = process.env.REACT_APP_API_BASE_URL;
-    const baseUrl =`${baseUrl1}api/Image`;
+    const baseUrl =`${baseUrl1}/api/Image`;
     console.log(baseUrl);
 
 useEffect(() => {

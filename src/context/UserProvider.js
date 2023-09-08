@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 export const UserProvider = (props) => {
     const [ barberList, setBarberList ] = useState([]);
     const baseUrl1 = process.env.REACT_APP_API_BASE_URL;
-    const baseUrl =`${baseUrl1}api/Barber`;
+    const baseUrl =`${baseUrl1}/api/Barber`;
 
 useEffect(() => {
     async function getAllBarbers() {
